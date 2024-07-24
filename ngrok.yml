@@ -1,0 +1,15 @@
+version: "2"
+authtoken: api-key
+tunnels:
+  nestjs:
+    proto: http
+    addr: http://host.docker.internal:3000
+    inspect: false
+  peerjs:
+    proto: http
+    addr: http://host.docker.internal:9000
+    inspect: false
+  nextjs:
+    proto: http
+    addr: http://host.docker.internal:3001
+    inspect: false
